@@ -21,18 +21,6 @@ int main()
 			table[n-1] = 1;
 			continue;
 		}
-		// else
-		// 	count = table[0] + table[idx-1];
-
-		// if (idx % 2)
-		// 	N = (idx+1)/2;
-		// else
-		// 	N = idx / 2;
-		// for (int idx1 = 0; idx1 < N; idx1++)
-		// {
-		// 	// table[idx] = min(count, table[idx1] + table[idx - idx1 - 1]);
-		// 	// count = table[idx];
-		// }
 		table[idx] = table[0] + table[idx-1];
 		cout << table[idx] << endl;
 	}
